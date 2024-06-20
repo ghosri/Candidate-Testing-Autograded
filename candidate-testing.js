@@ -31,7 +31,7 @@ candidateAnswers = input.question(questions[i])
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-  if(correctAnswers == candidateAnswer){
+  if(correctAnswers == candidateAnswers){
     console.log("You are correct")
   }
   else{
@@ -46,7 +46,14 @@ function gradeQuiz(candidateAnswers) {
   }
   }
   grade = (numberCorrect / questions.length) * 100
+  if(grade >= 80){
+    console.log(`Your final score is ${grade}, congratulations on passing the test`)
+  }
+  else{
+    console.log(`Your final score is ${grade}, unfortunately your grade isn't a passing score. You should try again`)
+  }
   return grade;
+
 }
 
 function runProgram() {
