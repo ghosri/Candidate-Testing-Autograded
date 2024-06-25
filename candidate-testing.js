@@ -66,7 +66,6 @@ function runProgram() {
   console.log(`Hello ${candidateName}, welcome to the test.`);
   askQuestion();
   gradeQuiz(this.candidateAnswers);
-  console.log(candidateAnswers)
 }
 
 // ----------- Don't write any code or change any code below this line ---------- //
